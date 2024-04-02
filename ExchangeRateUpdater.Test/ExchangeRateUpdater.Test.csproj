@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NUnit" Version="3.13.1" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+		<PackageReference Include="Moq" Version="4.16.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\ExchangeRateUpdater.Model\ExchangeRateUpdater.Model.csproj" />
+	  <ProjectReference Include="..\ExchangeRateUpdater.Service\ExchangeRateUpdater.Service.csproj" />
+	  <ProjectReference Include="..\Task\ExchangeRateUpdater.csproj" />
+	</ItemGroup>
+
+</Project>
